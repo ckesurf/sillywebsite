@@ -25,7 +25,7 @@ function App() {
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
-          Count is {count}
+          I have poked Rachel {count} times
         </button>
       </section>
 
