@@ -16,7 +16,6 @@ function ListingCard({
   return (
     <li className="card">
       <div className="image">
-        <span className="price">$0</span>
         <img src={image} alt={description} />
       </div>
       <div className="details">
@@ -37,9 +36,6 @@ function ListingCard({
         )}
         <strong>{description}</strong>
         <span> · {location}</span>
-        <button onClick={handleDeleteClick} className="emoji-button delete">
-          🗑
-        </button>
       </div>
     </li>
   );
