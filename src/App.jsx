@@ -6,32 +6,33 @@ const listingsInitial = [
   {
     "id": 1,
     "description": "tangential, upbeat affect",
-    "image": "./src/assets/donkey.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/6c/Donkey_%28Shrek%29.png",
+    "location": "Donkey (Shrek)"
 
   },
   {
     "id": 2,
-    "description": "2019 Toyota Tacoma grill",
-    "image": "./src/assets/toyota-grill.jpg",
-    "location": "Williamsburg"
+    "description": "low, gravelly, subdued affect",
+    "image": "https://lumiere-a.akamaihd.net/v1/images/b_winniethepooh_characterbanner_eeyore_mobile_9fed31a7.jpeg",
+    "location": "Eeyore (Winnie the Pooh)"
   },
   {
     "id": 3,
-    "description": "Free Braun 3735 Electric Toothbrush charger",
-    "image": "./src/assets/toothbrush-charger.jpg",
-    "location": "Williamsburg"
+    "description": "contemptuous, gravelly, incoherent manic affect",
+    "image": "https://cdn.aarp.net/content/dam/aarpe/en/home/entertainment/movies-for-grownups/best-jack-nicholson-movies/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/entertainment/movies-for-grownups/2022/04/1140-jack-nicholson-batman-the-shining-chinatown.jpg",
+    "location": "Jack Nicholson"
   },
   {
     "id": 4,
-    "description": "FREE Hundreds of DVD/CD Cases - Different Sizes and Colors",
-    "image": "./src/assets/dvd-cases.jpg",
-    "location": "Prospect Heights"
+    "description": "upbeat affect",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Joy_-_Inside_Out.webp",
+    "location": "Joy"
   },
   {
     "id": 5,
-    "description": "wood",
-    "image": "./src/assets/wood.jpg",
-    "location": "Greenpoint"
+    "description": "raspy, lower register, flat affect",
+    "image": "https://i.ytimg.com/vi/M9zfTxoubvw/maxresdefault.jpg",
+    "location": "Mira"
   }
 ]
 
