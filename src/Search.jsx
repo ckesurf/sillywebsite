@@ -8,14 +8,20 @@ function Search({ onSearch }) {
     onSearch(search);
   }
 
+  function handleChange(e) {
+    setSearch(e.target.value)
+    console.log(search)
+    onSearch(search)
+  }
+
   return (
-    <form className="searchbar" onSubmit={handleSubmit}>
+    <form className="searchbar" onSubmit={handleSubmit} >
       <input
         type="text"
         id="search"
         placeholder="search free stuff"
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => handleChange(e)}
       />
       <button type="submit">🔍</button>
     </form>
