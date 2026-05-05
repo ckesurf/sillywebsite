@@ -291,7 +291,34 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.detail-location {
+.detail-description {
   color: #666;
   font-size: 1rem;
+}
+
+.description-edit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.description-input {
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  flex: 1 1 auto;
+}
+
+.description-edit button {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+}
+
+.description-edit button:hover {
+  background: #f0f0f0;
 }

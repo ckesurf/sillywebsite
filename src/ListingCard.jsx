@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function ListingCard({
-  listing: { id, youtubeId, description, location },
+  listing: { id, youtubeId, description, title },
   onRemoveListing,
 }) {
   const [favorite, setFavorite] = useState(false);
@@ -40,7 +40,7 @@ function ListingCard({
           </button>
         )}
         <strong>{description}</strong>
-        <span> · {location}</span>
+        <span> · {title}</span>
       </div>
     </li>
   );

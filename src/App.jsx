@@ -9,36 +9,36 @@ const listingsInitial = [
     "id": 1,
     "description": "tangential, upbeat affect",
     "youtubeId": "oC3fCs-yD58",
-    "startTime": 121,
-    "location": "Donkey (Shrek)"
+    "startTime": 111,
+    "title": "Donkey (Shrek)"
   },
   {
     "id": 2,
     "description": "low, gravelly, subdued affect",
     "youtubeId": "CQI0E1WCLMU",
     "startTime": 0,
-    "location": "Eeyore (Winnie the Pooh)"
+    "title": "Eeyore (Winnie the Pooh)"
   },
   {
     "id": 3,
     "description": "contemptuous, gravelly",
     "youtubeId": "vyMggFe9WRQ",
     "startTime": 0,
-    "location": "Jack Nicholson"
+    "title": "Jack Nicholson"
   },
   {
     "id": 4,
     "description": "upbeat affect, optimistic outlook",
     "youtubeId": "xNDcvy0e7GI",
     "startTime": 0,
-    "location": "Joy"
+    "title": "Joy"
   },
   {
     "id": 5,
     "description": "lower register, flat affect",
     "youtubeId": "DHUC38kB1NY",
     "startTime": 0,
-    "location": "Daria"
+    "title": "Daria"
   }
 ]
 
@@ -56,6 +56,14 @@ function App() {
   function handleRemoveListing(id) {
     const newListings = listings.filter((listing) => listing.id !== id);
     setListings(newListings);
+  }
+
+  function handleUpdateDescription(id, newDescription) {
+    setListings((prev) =>
+      prev.map((listing) =>
+        listing.id === id ? { ...listing, description: newDescription } : listing
+      )
+    );
   }
 
   const displayedListings = listings.filter((listing) =>
@@ -78,7 +86,7 @@ function App() {
           />
           <Route
             path="/listings/:id"
-            element={<ListingDetail listings={listings} />}
+            element={<ListingDetail listings={listings} onUpdateDescription={handleUpdateDescription} />}
           />
         </Routes>
       </div>
