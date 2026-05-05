@@ -1,18 +1,23 @@
-# React + Vite
+# The Character Clinic 🎭
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reference site for cataloging famous fictional characters through the lens of the mental status exam (MSE) and voice acting vocal qualities.
 
-Currently, two official plugins are available:
+Each listing describes a character using clinical MSE language (affect, register, mood) alongside voice acting terminology (register, timbre, prosody), with an embedded YouTube clip as a primary source.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Browse characters as a grid of YouTube thumbnail cards
+- Click a card to open a detail page with the embedded video at a specific start time
+- Edit a character's description inline on the detail page
+- Search/filter characters by description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
 
-## Expanding the ESLint configuration
+Vite + React 19, React Router v7. No backend — data is hardcoded in `src/App.jsx`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# staticwebsite
-# staticwebsite
+## Running locally
+
+```bash
+npm install
+npm run dev
+```

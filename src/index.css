@@ -137,8 +137,8 @@ header h1 {
 
 .logo {
   margin-right: 0.5rem;
-  color: transparent;
-  text-shadow: 0 0 0 purple;
+  /* color: transparent;
+  text-shadow: 0 0 0 purple; */
 }
 
 .searchbar {
@@ -169,6 +169,13 @@ main {
   padding: 0 1rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.site-description {
+  margin: 1.5rem 0 0.5rem;
+  color: #666;
+  font-size: 0.95rem;
+  font-style: italic;
 }
 
 .emoji-button {

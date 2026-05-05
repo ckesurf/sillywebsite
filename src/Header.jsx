@@ -6,9 +6,9 @@ function Header({ onSearch }) {
     <header>
       <h1>
         <span className="logo" role="img">
-          ☮
+          🎭
         </span>
-        gregslist
+        The Character Clinic
       </h1>
       <Search onSearch={onSearch} />
     </header>
