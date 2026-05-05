@@ -5,6 +5,9 @@ function ListingDetail({ listings }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const listing = listings.find((l) => l.id === Number(id));
+  const embedUrl = listing
+    ? `https://www.youtube.com/embed/${listing.youtubeId}?start=${listing.startTime ?? 0}`
+    : null;
 
   if (!listing) {
     return (
@@ -20,7 +23,7 @@ function ListingDetail({ listings }) {
       <button className="back-button" onClick={() => navigate(-1)}>← Back</button>
       <div className="detail-video">
         <iframe
-          src={`https://www.youtube.com/embed/${listing.youtubeId}`}
+          src={embedUrl}
           title={listing.description}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

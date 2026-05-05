@@ -9,31 +9,36 @@ const listingsInitial = [
     "id": 1,
     "description": "tangential, upbeat affect",
     "youtubeId": "oC3fCs-yD58",
+    "startTime": 121,
     "location": "Donkey (Shrek)"
   },
   {
     "id": 2,
     "description": "low, gravelly, subdued affect",
     "youtubeId": "CQI0E1WCLMU",
+    "startTime": 0,
     "location": "Eeyore (Winnie the Pooh)"
   },
   {
     "id": 3,
     "description": "contemptuous, gravelly",
     "youtubeId": "vyMggFe9WRQ",
+    "startTime": 0,
     "location": "Jack Nicholson"
   },
   {
     "id": 4,
     "description": "upbeat affect, optimistic outlook",
     "youtubeId": "xNDcvy0e7GI",
+    "startTime": 0,
     "location": "Joy"
   },
   {
     "id": 5,
-    "description": "raspy, lower register, flat affect",
-    "youtubeId": "M9zfTxoubvw",
-    "location": "Mira"
+    "description": "lower register, flat affect",
+    "youtubeId": "DHUC38kB1NY",
+    "startTime": 0,
+    "location": "Daria"
   }
 ]
 
