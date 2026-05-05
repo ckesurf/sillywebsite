@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ListingCard({
-  listing: { id, image, description, location },
+  listing: { id, youtubeId, description, location },
   onRemoveListing,
 }) {
   const [favorite, setFavorite] = useState(false);
+  const navigate = useNavigate();
 
   function handleDeleteClick() {
     fetch(`http://localhost:6001/listings/${id}`, {
@@ -14,21 +16,24 @@ function ListingCard({
   }
 
   return (
-    <li className="card">
+    <li className="card" onClick={() => navigate(`/listings/${id}`)} style={{ cursor: "pointer" }}>
       <div className="image">
-        <img src={image} alt={description} />
+        <img
+          src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
+          alt={description}
+        />
       </div>
       <div className="details">
         {favorite ? (
           <button
-            onClick={() => setFavorite(false)}
+            onClick={(e) => { e.stopPropagation(); setFavorite(false); }}
             className="emoji-button favorite active"
           >
             ★
           </button>
         ) : (
           <button
-            onClick={() => setFavorite(true)}
+            onClick={(e) => { e.stopPropagation(); setFavorite(true); }}
             className="emoji-button favorite"
           >
             ☆

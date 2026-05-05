@@ -243,3 +243,55 @@ main {
   font-size: 1rem;
 }
 
+.listing-detail {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.back-button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.back-button:hover {
+  background: #f0f0f0;
+}
+
+.detail-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.detail-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.detail-info {
+  margin-top: 1rem;
+}
+
+.detail-info h2 {
+  font-family: serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-location {
+  color: #666;
+  font-size: 1rem;
+}
